@@ -61,7 +61,6 @@ dependencies {
     //material calender
     implementation("com.applandeo:material-calendar-view:1.9.2")
     //lotti files
-    implementation("com.airbnb.android:lottie:6.0.0")
     //firebase database
     implementation("com.google.firebase:firebase-firestore-ktx:25.1.4")
 
