@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.students.HomeFragment">
+
+    <TextView
+        android:id="@+id/txtHI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hi,"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtStdName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStdName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Munawar"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/txtHI"
+        app:layout_constraintEnd_toStartOf="@+id/txtHI"
+        app:layout_constraintStart_toEndOf="@id/txtHI"
+        app:layout_constraintTop_toTopOf="@id/txtHI" />
+
+    <LinearLayout
+        android:id="@+id/layoutSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_student" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Log Out" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303FA0"
+        app:layout_constraintTop_toBottomOf="@id/layoutSignOut" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCalender"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:strokeColor="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/cardColor"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintEnd_toStartOf="@id/cardProfile"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Calender" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/cardColor"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@android:color/transparent"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardCalender"
+        app:layout_constraintEnd_toStartOf="@id/cardSetting"
+        app:layout_constraintStart_toEndOf="@id/cardCalender"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintTop_toTopOf="@id/cardCalender">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:paddingHorizontal="10dp"
+                android:text="Profile" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSetting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/cardColor"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@android:color/transparent"
+
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardCalender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardProfile"
+        app:layout_constraintTop_toTopOf="@id/cardCalender">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Setting" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:id="@+id/newsFeed"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/layout_newsfeed">
+
+            <TextView
+                android:id="@+id/txtNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Feed"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                app:layout_constraintBottom_toTopOf="@id/img"
+                android:background="#3343A7"
+                app:layout_constraintStart_toStartOf="@id/txtNews"
+                app:layout_constraintTop_toBottomOf="@id/txtNews" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/splash"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txtNews"
+                app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="april,12,204"
+                android:textColor="#3342A6"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toTopOf="@id/txtTitle"
+                app:layout_constraintStart_toEndOf="@id/img"
+                app:layout_constraintTop_toTopOf="@id/img"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="Sports Gala"
+                app:layout_constraintBottom_toBottomOf="@+id/img"
+                app:layout_constraintStart_toStartOf="@id/txtDate"
+                app:layout_constraintTop_toBottomOf="@id/txtDate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appTopColor">#303F9F</color>
+    <color name="appBackGroundColor">#E6FFFEFE</color>
+    <color name="cardColor">#DEFFFFFF</color>
+    <color name="cardStudent">#4CAF91</color>
+    <color name="cardAdmin">#27327E</color>
+    <color name="iconColor">#000000</color>
+</resources>

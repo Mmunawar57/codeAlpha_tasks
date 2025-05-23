@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.students.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newfeedsFragment"
+            app:destination="@id/newfeedsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_calenderFragment"
+            app:destination="@id/calenderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.codealpha.app.collegealert.ui.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_studentLoginFragment"
+            app:destination="@id/studentLoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_studentSignUpFragment"
+            app:destination="@id/studentSignUpFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_adminRegisterFragment"
+            app:destination="@id/adminRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.admin.AdminLoginFragment"
+        android:label="fragment_admin_login"
+        tools:layout="@layout/fragment_admin_login" >
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminRegisterFragment"
+            app:destination="@id/adminRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentLoginFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.students.StudentLoginFragment"
+        android:label="fragment_student_login"
+        tools:layout="@layout/fragment_student_login" >
+        <action
+            android:id="@+id/action_studentLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_studentLoginFragment_to_studentSignUpFragment"
+            app:destination="@id/studentSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentSignUpFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.students.StudentSignUpFragment"
+        android:label="fragment_student_signup"
+        tools:layout="@layout/fragment_student_signup" >
+        <action
+            android:id="@+id/action_studentSignUpFragment_to_studentLoginFragment"
+            app:destination="@id/studentLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newfeedsFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.NewsfeedFragment"
+        android:label="fragment_newfeeds"
+        tools:layout="@layout/fragment_newfeeds" >
+        <action
+            android:id="@+id/action_newfeedsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminRegisterFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.admin.AdminRegisterFragment"
+        android:label="fragment_adminregister"
+        tools:layout="@layout/fragment_adminregister" >
+        <action
+            android:id="@+id/action_adminRegisterFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.admin.AdminHomeFragment"
+        android:label="fragment_adminhome"
+        tools:layout="@layout/fragment_adminhome" >
+        <action
+            android:id="@+id/action_adminHomeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_uploadNewsFragment"
+            app:destination="@id/uploadNewsFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_deleteNewsFragment"
+            app:destination="@id/deleteNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.students.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteNewsFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.admin.DeleteNewsFragment"
+        android:label="fragment_deletenews"
+        tools:layout="@layout/fragment_deletenews" />
+    <fragment
+        android:id="@+id/uploadNewsFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.admin.UploadNewsFragment"
+        android:label="fragment_uploadnews"
+        tools:layout="@layout/fragment_uploadnews" />
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="com.codealpha.app.collegealert.ui.fragments.students.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" >
+        <action
+            android:id="@+id/action_calenderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.codealpha.app.collegealert.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="location "
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
