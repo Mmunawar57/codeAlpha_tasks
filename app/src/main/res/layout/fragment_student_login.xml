@@ -64,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="pssword"
+            android:inputType="number"
             android:layout_marginTop="10dp"
             android:paddingStart="20dp"
             android:layout_marginHorizontal="10dp"
