@@ -25,4 +25,4 @@ _Add your app screenshots here_
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/college-alert-app.git
+   git clone https://github.com/Mmunawar57/codeAlpha_tasks.git
